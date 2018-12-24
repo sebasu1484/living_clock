@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="default.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="clock.js"></script>
+<!--     <script type="text/javascript" src="weather.js"></script> -->
+    <title>my-clock</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <!-- built files will be auto injected -->
+    <header></header>
+    <div class="clock_block">
+         <div id="clock">
+            <p class="date">{{ date }}</p>
+            <p class="time">{{ time }}</p>
+            <p class="text">DIGITAL CLOCK with Vue.js</p>
+        </div>
+    </div>
+
+ <!--   <div class="clock">
+        <h1>Clock</h1>
+    </div>
+           -->
+    <div id="weather">
+        <div class="weather-main">
+          <h2>Today</h2>
+<!--           <i class="today_weather_img"></i>
+          <p class="today_weather">{{ today_weather }}</p> -->
+          <i id="today" class="today_icon"></i>
+        </div>
+        <div class="weather-sub">
+            <div class="tomorrow">yyyy</div>
+            <div class="day_after_tomorrow">zzzz</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="news">
+        <h1>news</h1>
+    </div>
+ 
+    <footer></footer>
+  </body>
+</html>

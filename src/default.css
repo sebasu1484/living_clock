@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+.clear {
+  clear: left;
+}
+
+/*.clock {
+  width: 100%;
+  height: 300px;
+  background-color: #918e8edc;
+}
+
+.clock h1 {
+  margin: 0px 0px;
+}*/
+
+.clock_block {
+  width: 100%;
+  height: 300px;
+  /* position: absolute ; */
+  top: 0;
+
+  background: #0f3854;
+  background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+  background-size: 100%;
+}
+#clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+
+}
+.time {
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  padding: 5px 0;
+}
+.date {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+.text {
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+
+.weather {
+  width: 100%;
+  height: 250px;  /*子要素の大きさにして消すかも*/
+  background-color: #FFD466;
+}
+
+.weather-main {
+  width: 60%;
+  height: 100%;
+  float: left;
+  background-color: #FFD466;
+}
+
+.weather-sub {
+  width: 40%;
+  height: 100%;
+  float: right;
+  background-color: rgb(209, 255, 102);
+}
+
+.sub1 {
+  height: 50%;
+}
+
+.sub2 {
+  height: 50%;
+}
+
+.news {
+  width: 100%;
+  height: 450px;
+  background-color: azure;
+}
+
+.news h1 {
+  margin: 0px 0px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
