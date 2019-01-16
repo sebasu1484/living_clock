@@ -18,6 +18,11 @@ function updateTime () {
   clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()]
 };
 
+/**
+ * 一桁の場合0をパディングする("1" -> "01")
+ * @param {*} num
+ * @param {*} digit
+ */
 function zeroPadding (num, digit) {
   var zero = ''
   for (var i = 0; i < digit; i++) {

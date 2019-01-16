@@ -28,7 +28,5 @@ export default {
 </style> -->
 
 <script src="./script/clock.js"></script>
-<!-- weatherは一旦コメント
-<script src="./script/weather.js"></script>
--->
+
 <style src="./default.css"></style>

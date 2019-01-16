@@ -59,7 +59,7 @@ html,body {
 
 .weather {
   width: 100%;
-  height: 250px;  /*子要素の大きさにして消すかも*/
+  height: 300px;  /*子要素の大きさにして消すかも*/
   background-color: #FFD466;
 }
 
@@ -76,6 +76,37 @@ html,body {
   float: right;
   background-color: rgb(209, 255, 102);
 }
+
+.wi {
+  font-size: 40px;
+  color: #d7e7ec;
+  margin-left: 15px;
+  width: 60px;
+}
+
+.famain {
+  color: #d7e7ec;
+  font-size: 6em;
+  width: 80px;
+  height: 80px;
+}
+
+.fasub {
+  color: #d7e7ec;
+  font-size: 3em;
+  width: 40px;
+  height: 40px;
+}
+
+/* img {
+  width: 40px;
+  height: 40px;
+  color: #000000;
+} */
+/* span:before {
+  content: "\f002";
+  font-family: 'weathericons';
+} */
 
 .sub1 {
   height: 50%;

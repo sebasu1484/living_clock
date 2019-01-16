@@ -42,7 +42,32 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
-    }
+    }/* ,
+    staticOptions: {
+      setHeaders: (res, path, stat) => {
+        var reObj = new RegExp('.svg')
+        //if(reObj.test(path)) {
+        if(/\.svg$/.test(path)) {
+          res.set('Content-Type', 'image/svg+xml')
+        }
+      }
+    } */
+/*     , headers: ( path) => {
+      if (/.svg$/.test(path)) {
+        'Content-Type', 'image/svg+xml'
+      }
+    } */
+/*     , headers: {
+      'Content-Type': 'image/svg+xml'
+    } */
+/*     , setup: function(app) {
+      app.get('/*weather-icons.min.css', (req, res) => {
+        res.setHeader('Content-Type', 'image/svg+xml')
+        if (req.url.includes('.svg')) {
+          res.setHeader('Content-Type', 'image/svg+xml')
+        }
+      })
+    } */
   },
   plugins: [
     new webpack.DefinePlugin({
